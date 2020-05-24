@@ -11,7 +11,6 @@ public class Main {
 		String urlString = "http://riweb.tibeica.com/crawl/";
 		URL ureleu = new URL(urlString);
 		Director_manager.createDir(urlString);
-		//Director_manager.getFiles(urlString);
 		cw.cheielaCrawler(urlString);
 		Client_HTTP.getHttpClient(urlString);
 	}
