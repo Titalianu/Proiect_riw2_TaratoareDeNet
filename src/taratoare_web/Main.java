@@ -11,8 +11,11 @@ public class Main {
 		String urlString = "http://riweb.tibeica.com/crawl/";
 		URL ureleu = new URL(urlString);
 		Director_manager.createDir(urlString);
-		cw.cheielaCrawler(urlString);
-		Client_HTTP.getHttpClient(urlString);
+		
+		if (cw.isSafeRobot(ureleu)) {
+			cw.cheielaCrawler(urlString);
+			Client_HTTP.getHttpClient(urlString);
+		}
 	}
 
 }

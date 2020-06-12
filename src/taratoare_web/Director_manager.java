@@ -1,13 +1,10 @@
 package taratoare_web;
 
 import java.io.File;
-import java.util.ArrayList;
 
 public class Director_manager {
 	
-	// Create directory for all url's
 	public static void createDir(String Link) {
-		// http://riweb.tibeica.com/tests/l1_absolute/name/nam
 		String[] parts = Link.split("/");
 		Integer i;
 		String path = parts[2];
